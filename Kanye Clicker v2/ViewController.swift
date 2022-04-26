@@ -14,7 +14,7 @@ var points = 0
         // Do any additional setup after loading the view.
     }
 
-//yooooo
+
     
 }
 
