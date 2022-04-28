@@ -28,10 +28,9 @@ class ViewController: UIViewController {
         //whoever is in charge of making it so when you click Kanye it gives you points add the cost here
     }
     
-    @IBAction func clickKanye(_ sender: Any) {
-    points += pointPerClick
-    }
-    
+    @IBAction func clickkanye(_ sender: UITapGestureRecognizer) {
+        points += pointPerClick
+        }
     
     @IBAction func doublePointClick(_ sender: Any) {
         pointPerClick *= 2
