@@ -68,13 +68,26 @@
                                 <rect key="frame" x="129" y="110" width="265" height="373"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Z42-aH-1nH" appends="YES" id="I6a-pf-8pE"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="clickKanye" destination="kUo-X3-TLf" id="QKA-0W-GCC"/>
+                        <outlet property="kanyeHead" destination="kUo-X3-TLf" id="0qz-FM-yHI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Z42-aH-1nH">
+                    <connections>
+                        <action selector="clickKanye:" destination="BYZ-38-t0r" id="gdQ-NG-nbR"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
         </scene>
