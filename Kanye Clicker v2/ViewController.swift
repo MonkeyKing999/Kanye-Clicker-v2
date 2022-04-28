@@ -7,10 +7,13 @@
 
 import UIKit
 
-var pointPerClick = 0
-
 class ViewController: UIViewController {
-var points = 0
+
+    var points = 0
+    var pointPerClick = 0
+    var idlePoint = 0
+    var didActivateTimer = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -21,7 +24,19 @@ var points = 0
         //whoever is in charge of making it so when you click Kanye it gives you points add the cost here
     }
     
-    
-    
+    @IBAction func idleIncrease(_ sender: Any) {
+        
+        if didActivateTimer == true {return}
+        
+        if points >= 2500 {
+        points -= 2500
+        }
+        else {return}
+        
+        didActivateTimer = true
+        
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true)  {_ in Timer()
+            self.points += self.idlePoint
+        }
+        }
 }
-
