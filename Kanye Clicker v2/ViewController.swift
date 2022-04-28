@@ -7,6 +7,8 @@
 
 import UIKit
 
+var pointPerClick = 0
+
 class ViewController: UIViewController {
 var points = 0
     override func viewDidLoad() {
@@ -14,7 +16,12 @@ var points = 0
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func morePointPerClick(_ sender: Any) {
+        pointPerClick += 1
+        //whoever is in charge of making it so when you click Kanye it gives you points add the cost here
+    }
+    
+    
     
 }
 
