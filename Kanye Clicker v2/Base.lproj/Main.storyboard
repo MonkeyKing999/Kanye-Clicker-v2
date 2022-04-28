@@ -80,6 +80,7 @@
                     <connections>
                         <outlet property="clickKanye" destination="kUo-X3-TLf" id="QKA-0W-GCC"/>
                         <outlet property="kanyeHead" destination="kUo-X3-TLf" id="0qz-FM-yHI"/>
+                        <outlet property="pointDisplay" destination="PVP-FV-SKQ" id="bMG-Z2-oLr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

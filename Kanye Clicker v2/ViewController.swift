@@ -13,13 +13,16 @@ class ViewController: UIViewController {
     var pointPerClick = 0
     var idlePoint = 0
     var didActivateTimer = false
+    @IBOutlet weak var pointDisplay: UILabel!
     @IBOutlet weak var kanyeHead: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        while true {
+            pointDisplay.text = String(points)
     }
-
+    }
     @IBAction func morePointPerClick(_ sender: Any) {
         pointPerClick += 1
         //whoever is in charge of making it so when you click Kanye it gives you points add the cost here
