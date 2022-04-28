@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     var points = 0
-    var pointPerClick = 0
+    var pointPerClick = 1
     var idlePoint = 0
     var didActivateTimer = false
     @IBOutlet weak var pointDisplay: UILabel!
@@ -30,6 +30,11 @@ class ViewController: UIViewController {
     
     @IBAction func clickKanye(_ sender: Any) {
     points += pointPerClick
+    }
+    
+    
+    @IBAction func doublePointClick(_ sender: Any) {
+        pointPerClick *= 2
     }
     
     @IBAction func idleIncrease(_ sender: Any) {
