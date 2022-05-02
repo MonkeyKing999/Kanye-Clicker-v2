@@ -63,4 +63,7 @@ class ViewController: UIViewController {
             
         }
         }
+@IBAction func clickKanye(_ sender: UITapGestureRecognizer) {
+points += pointPerClick
+}
 }

@@ -73,7 +73,7 @@
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="sKk-xE-s4c" appends="YES" id="xwY-5O-HXq"/>
+                                    <outletCollection property="gestureRecognizers" destination="wfZ-te-LNg" appends="YES" id="BO1-wt-Kl1"/>
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ad4-KH-dG8">
@@ -95,9 +95,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="sKk-xE-s4c">
+                <tapGestureRecognizer id="wfZ-te-LNg">
                     <connections>
-                        <action selector="clickkanye:" destination="BYZ-38-t0r" id="WEd-Pn-YdC"/>
+                        <action selector="clickKanye:" destination="BYZ-38-t0r" id="72A-n0-sc6"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
