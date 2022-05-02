@@ -3,7 +3,7 @@
 //  Kanye Clicker v2
 //
 //  Created by Dev Patel on 4/26/22.
-//com
+//comnj
 
 import UIKit
 
@@ -32,7 +32,11 @@ class ViewController: UIViewController {
     
     
     @IBAction func morePointPerClick(_ sender: Any) {
-        pointPerClick += 1
+        if points >= 10 {
+            pointPerClick += 1
+            points -= 10
+        }
+        
         //whoever is in charge of making it so when you click Kanye it gives you points add the cost here
     
     }
