@@ -16,6 +16,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var pointDisplay: UILabel!
     @IBOutlet weak var kanyeHead: UIImageView!
     
+    func update () {
+        pointDisplay.text = String(points)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -23,11 +27,13 @@ class ViewController: UIViewController {
     @IBAction func morePointPerClick(_ sender: Any) {
         pointPerClick += 1
         //whoever is in charge of making it so when you click Kanye it gives you points add the cost here
+    update()
     }
     
     @IBAction func clickkanye(_ sender: UITapGestureRecognizer) {
         points += pointPerClick
-        }
+        update()
+    }
     
     @IBAction func doublePointClick(_ sender: Any) {
         pointPerClick *= 2
@@ -39,6 +45,7 @@ class ViewController: UIViewController {
         
         if points >= 2500 {
         points -= 2500
+            update()
         }
         else {return}
         
@@ -46,6 +53,7 @@ class ViewController: UIViewController {
         
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true)  {_ in Timer()
             self.points += self.idlePoint
+            self.update()
         }
         }
 }
