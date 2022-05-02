@@ -18,11 +18,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        while true {
-            pointDisplay.text = String(points)
     }
-    }
+    
     @IBAction func morePointPerClick(_ sender: Any) {
         pointPerClick += 1
         //whoever is in charge of making it so when you click Kanye it gives you points add the cost here
