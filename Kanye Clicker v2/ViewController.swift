@@ -29,8 +29,6 @@ class ViewController: UIViewController {
             pointDisplay.text = String(points)
     }
     
-    
-    
     @IBAction func morePointPerClick(_ sender: Any) {
         if points >= 10 {
             pointPerClick += 1
@@ -43,10 +41,6 @@ class ViewController: UIViewController {
     
     }
     
-    @IBAction func clickkanye(_ sender: UITapGestureRecognizer) {
-        points += pointPerClick
-        
-    }
     
     @IBAction func doublePointClick(_ sender: Any) {
         pointPerClick *= 2
@@ -69,7 +63,4 @@ class ViewController: UIViewController {
             
         }
         }
-@IBAction func clickKanye(_ sender: UITapGestureRecognizer) {
-points += pointPerClick
-}
 }
