@@ -125,6 +125,13 @@
                                     <segue destination="uUk-07-3eT" kind="show" id="TqR-FT-KtG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNn-7i-t1g">
+                                <rect key="frame" x="49" y="536" width="283" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
@@ -132,6 +139,7 @@
                     <connections>
                         <outlet property="kanyeHead" destination="kUo-X3-TLf" id="0qz-FM-yHI"/>
                         <outlet property="pointDisplay" destination="PVP-FV-SKQ" id="bMG-Z2-oLr"/>
+                        <outlet property="secretLabel" destination="kNn-7i-t1g" id="WTf-6m-fzp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
