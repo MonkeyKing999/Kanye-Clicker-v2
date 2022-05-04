@@ -54,8 +54,12 @@ class ViewController: UIViewController {
     
     
     @IBAction func doublePointClick(_ sender: Any) {
-        pointPerClick *= 2
-    }
+        if points >= 10000 {
+        pointPerClick += pointPerClick
+            points -= 10000
+        } else {
+            return
+        }
     
     @IBAction func idleIncrease(_ sender: Any) {
         
@@ -74,4 +78,5 @@ class ViewController: UIViewController {
             
         }
         }
+}
 }
