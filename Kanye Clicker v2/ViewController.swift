@@ -3,14 +3,14 @@
 //  Kanye Clicker v2
 //
 //  Created by Dev Patel on 4/26/22.
-//comment
+//comment change
 
 import UIKit
 
 class ViewController: UIViewController {
 
     var points = 0
-    var pointPerClick = 50000
+    var pointPerClick = 1
     var idlePoint = 1
     var didActivateTimer = false
     var timed = Timer()
