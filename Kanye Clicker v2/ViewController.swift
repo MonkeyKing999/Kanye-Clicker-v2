@@ -10,8 +10,8 @@ import UIKit
 class ViewController: UIViewController {
 
     var points = 0
-    var pointPerClick = 1
-    var idlePoint = 0
+    var pointPerClick = 50000
+    var idlePoint = 1
     var didActivateTimer = false
     var timed = Timer()
     @IBOutlet weak var pointDisplay: UILabel!
@@ -63,15 +63,13 @@ class ViewController: UIViewController {
         
         if points >= 2500 {
         points -= 2500
-            
-        }
+            }
         else {return}
         
         didActivateTimer = true
         
-        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true)  {_ in Timer()
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) {_ in Timer()
             self.points += self.idlePoint
-            
         }
         }
 }
