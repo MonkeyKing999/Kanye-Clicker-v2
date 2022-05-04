@@ -107,13 +107,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kanyeHead" translatesAutoresizingMaskIntoConstraints="NO" id="kUo-X3-TLf">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kanyeHead" translatesAutoresizingMaskIntoConstraints="NO" id="kUo-X3-TLf">
                                 <rect key="frame" x="129" y="110" width="265" height="373"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="sKk-xE-s4c" appends="YES" id="xwY-5O-HXq"/>
+                                    <outletCollection property="gestureRecognizers" destination="8dS-Ke-sm5" appends="YES" id="ntL-Vc-8fL"/>
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ad4-KH-dG8">
@@ -135,9 +135,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="sKk-xE-s4c">
+                <tapGestureRecognizer id="8dS-Ke-sm5">
                     <connections>
-                        <action selector="clickkanye:" destination="BYZ-38-t0r" id="WEd-Pn-YdC"/>
+                        <action selector="clickTapGestureImage:" destination="BYZ-38-t0r" id="D5U-UA-JyJ"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

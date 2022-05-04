@@ -25,6 +25,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    @IBAction func clickTapGestureImage(_ sender: Any) {
+        points += pointPerClick
+    }
+    
+    
     @objc func timedAction() {
             pointDisplay.text = String(points)
     }
@@ -43,10 +48,8 @@ class ViewController: UIViewController {
     
     }
     
-    @IBAction func clickkanye(_ sender: UITapGestureRecognizer) {
-        points += pointPerClick
-        
-    }
+
+    
     
     @IBAction func doublePointClick(_ sender: Any) {
         pointPerClick *= 2
