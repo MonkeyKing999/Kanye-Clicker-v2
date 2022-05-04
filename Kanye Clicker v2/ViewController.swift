@@ -61,7 +61,7 @@ class ViewController: UIViewController {
             return
         }
     
-    @IBAction func idleIncrease(_ sender: Any) {
+    //insert here
         
         if didActivateTimer == true {return}
         
@@ -75,6 +75,6 @@ class ViewController: UIViewController {
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) {_ in Timer()
             self.points += self.idlePoint
         }
-        }
+        //closure here
 }
 }
