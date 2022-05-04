@@ -60,9 +60,10 @@ class ViewController: UIViewController {
         } else {
             return
         }
-    
-    //insert here
-        
+    }
+
+
+    @IBAction func idleIncreaase(_ sender: Any) {
         if didActivateTimer == true {return}
         
         if points >= 2500 {
@@ -75,6 +76,10 @@ class ViewController: UIViewController {
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) {_ in Timer()
             self.points += self.idlePoint
         }
-        //closure here
-}
+        
+        
+    }
+    
+    
+    
 }
