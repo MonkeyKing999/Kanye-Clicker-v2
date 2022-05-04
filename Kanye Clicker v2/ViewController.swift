@@ -32,6 +32,12 @@ class ViewController: UIViewController {
     @IBAction func clickTapGestureImage(_ sender: Any) {
         points += pointPerClick
     }
+    @IBAction func restart(_ sender: Any) {
+        points = 0
+        pointPerClick = 1
+        idlePoint = 1
+        secretLabel.text = ("")
+    }
     
     
     @objc func timedAction() {
