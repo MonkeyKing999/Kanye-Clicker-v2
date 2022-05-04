@@ -17,12 +17,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var pointDisplay: UILabel!
     @IBOutlet weak var kanyeHead: UIImageView!
     
-
-    
     override func viewDidLoad() {
-        
         timed = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(timedAction), userInfo: nil, repeats: true)
         super.viewDidLoad()
+        
+        if let pointsBack = UserDefaults.standard.string(forKey: "thePoints") {
+            let retrievePoints = Int(pointsBack)
+            points = retrievePoints!
+        }
+        else {return}
     }
     
     @IBAction func clickTapGestureImage(_ sender: Any) {
@@ -32,9 +35,8 @@ class ViewController: UIViewController {
     
     @objc func timedAction() {
             pointDisplay.text = String(points)
+        UserDefaults.standard.set(String(points), forKey: "thePoints")
     }
-    
-    
     
     @IBAction func morePointPerClick(_ sender: Any) {
         if points >= 10 {
