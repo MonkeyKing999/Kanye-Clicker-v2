@@ -100,5 +100,19 @@ class ViewController: UIViewController {
         else {return}
         
         didActivateTimer = true
+        
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) {_ in Timer()
+            self.points += self.idlePoint
+        }
+        
+        
+    }
+    
+    @IBAction func godmode(_ sender: Any) {
+        points += 10000
+    }
+    
+    
+}
         }
         }
