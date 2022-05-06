@@ -32,6 +32,15 @@ class ViewController: UIViewController {
         guard let x = idleBack as Int? else {
             self.idlePoint = idleBack
         }
+        let retrieveTimer = UserDefaults.standard.bool(forKey: "activation")
+        didActivateTimer = retrieveTimer
+        
+        if didActivateTimer == true {
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) {_ in Timer()
+            self.points += self.idlePoint
+        }
+        }
+        else {print("Timer Was False")}
     }
     
     @IBAction func clickTapGestureImage(_ sender: Any) {
@@ -48,6 +57,7 @@ class ViewController: UIViewController {
             pointDisplay.text = String(points)
         UserDefaults.standard.set(String(points), forKey: "thePoints")
         UserDefaults.standard.set(idlePoint, forKey: "theIdlePoints")
+        UserDefaults.standard.set(didActivateTimer, forKey: "activation")
         if points >= 1000000 {
             points = 0
             pointPerClick = 0
@@ -90,14 +100,5 @@ class ViewController: UIViewController {
         else {return}
         
         didActivateTimer = true
-        
-        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) {_ in Timer()
-            self.points += self.idlePoint
         }
-        
-        
-    }
-    
-    
-    
-}
+        }
