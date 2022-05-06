@@ -4,11 +4,14 @@
 //
 //  Created by Dev Patel on 4/26/22.
 //comment change1
-
+import AVFoundation
 import UIKit
+
 
 class ViewController: UIViewController {
 
+    
+    
     var points = 0
     var pointPerClick = 1
     var idlePoint = 1
@@ -17,6 +20,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var pointDisplay: UILabel!
     @IBOutlet weak var kanyeHead: UIImageView!
     @IBOutlet weak var secretLabel: UILabel!
+    
+    var player: AVAudioPlayer?
     
     override func viewDidLoad() {
         timed = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(timedAction), userInfo: nil, repeats: true)
@@ -28,6 +33,47 @@ class ViewController: UIViewController {
         }
         else {return}
     }
+    
+
+    @IBAction func allfallsdown(_ sender: Any) {
+        if let player = player, player.isPlaying {
+            // stop playback
+            
+            player.stop()
+        }
+        else {
+            //set up player, and play
+            let urlString = Bundle.main.path(forResource: "KanyeAllFallsDown", ofType: "mp3")
+            
+            do {
+                try AVAudioSession.sharedInstance().setMode(.default)
+                try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
+                
+                guard let urlString = urlString else {
+                    return
+                }
+
+                player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: urlString))
+                
+                guard let player = player else {
+                    return
+                }
+                
+                player.play()
+            }
+            catch {
+                print("somthing went wrong")
+            }
+        }
+    }
+    @IBAction func golddigger(_ sender: Any) {
+    }
+    @IBAction func flashinglights(_ sender: Any) {
+    }
+    @IBAction func jesuswalks(_ sender: Any) {
+    }
+    
+    
     
     @IBAction func clickTapGestureImage(_ sender: Any) {
         points += pointPerClick
@@ -89,10 +135,7 @@ class ViewController: UIViewController {
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) {_ in Timer()
             self.points += self.idlePoint
         }
-        
-        
     }
-    
     
     
 }

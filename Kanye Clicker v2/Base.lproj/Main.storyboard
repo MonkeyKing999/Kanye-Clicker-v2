@@ -218,24 +218,37 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Jesus Walks"/>
+                                <connections>
+                                    <action selector="jesuswalks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c8g-7A-V7b"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jbb-Gn-6vI">
                                 <rect key="frame" x="286" y="564" width="122" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Flashing Lights"/>
+                                <connections>
+                                    <action selector="flashinglights:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mO2-ZE-Ncd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rs0-AA-69Y">
                                 <rect key="frame" x="11" y="564" width="114" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="All Falls Down"/>
+                                <connections>
+                                    <action selector="allfallsdown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eVS-bD-Si2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eM2-fs-wsb">
                                 <rect key="frame" x="142" y="564" width="110" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Gold Digger"/>
+                                <connections>
+                                    <action selector="allfallsdown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kNr-ou-ILu"/>
+                                    <action selector="golddigger:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zUz-vN-AiO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
