@@ -26,16 +26,21 @@ class ViewController: UIViewController {
             points = retrievePoints!
         }
         else {return}
+        
+        let idleBack = UserDefaults.standard.integer(forKey: "theIdlePoints")
+        guard let x = idleBack as Int? else {
+            self.idlePoint = idleBack
+        }
     }
     
     @IBAction func clickTapGestureImage(_ sender: Any) {
         points += pointPerClick
     }
     
-    
     @objc func timedAction() {
             pointDisplay.text = String(points)
         UserDefaults.standard.set(String(points), forKey: "thePoints")
+        UserDefaults.standard.set(idlePoint, forKey: "theIdlePoints")
     }
     
     @IBAction func morePointPerClick(_ sender: Any) {
