@@ -98,6 +98,9 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func godmode(_ sender: Any) {
+        points += 10000
+    }
     
     
 }
