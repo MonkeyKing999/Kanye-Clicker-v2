@@ -81,8 +81,68 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func golddigger(_ sender: Any) {
+        if let player = player, player.isPlaying {
+            // stop playback
+            
+            player.stop()
+        }
+        else {
+            //set up player, and play
+            let urlString = Bundle.main.path(forResource: "KanyeGoldDiggerCleen", ofType: "mp3")
+            
+            do {
+                try AVAudioSession.sharedInstance().setMode(.default)
+                try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
+                
+                guard let urlString = urlString else {
+                    return
+                }
+
+                player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: urlString))
+                
+                guard let player = player else {
+                    return
+                }
+                
+                player.play()
+            }
+            catch {
+                print("somthing went wrong")
+            }
+        }
+    
     }
     @IBAction func flashinglights(_ sender: Any) {
+        if let player = player, player.isPlaying {
+            // stop playback
+            
+            player.stop()
+        }
+        else {
+            //set up player, and play
+            let urlString = Bundle.main.path(forResource: "FlashingLights", ofType: "mp3")
+            
+            do {
+                try AVAudioSession.sharedInstance().setMode(.default)
+                try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
+                
+                guard let urlString = urlString else {
+                    return
+                }
+
+                player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: urlString))
+                
+                guard let player = player else {
+                    return
+                }
+                
+                player.play()
+            }
+            catch {
+                print("somthing went wrong")
+            }
+        }
+    
     }
     @IBAction func jesuswalks(_ sender: Any) {
     }
