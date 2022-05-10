@@ -176,7 +176,11 @@ class ViewController: UIViewController {
         }
     
     }
+    @IBAction func power(_ sender: Any) {
+    }
     
+    @IBAction func heartless(_ sender: Any) {
+    }
     
     
     @IBAction func clickTapGestureImage(_ sender: Any) {

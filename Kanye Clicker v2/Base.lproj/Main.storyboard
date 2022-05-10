@@ -292,7 +292,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Power"/>
                                 <connections>
                                     <action selector="jesuswalks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EQn-B6-ocO"/>
-                                    <action selector="power:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FwE-b0-kw7"/>
+                                    <action selector="power:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ClO-qF-euc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tew-nW-4Ez">
@@ -301,7 +301,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Heartless"/>
                                 <connections>
-                                    <action selector="heartless:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1D9-Bh-beW"/>
+                                    <action selector="heartless:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sRc-RG-fWV"/>
                                     <action selector="jesuswalks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aw7-hn-hAW"/>
                                 </connections>
                             </button>
