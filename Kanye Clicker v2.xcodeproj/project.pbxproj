@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9B7E61DE282ABCC300E45BB2 /* JesusWalks.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B7E61DD282ABCC300E45BB2 /* JesusWalks.mp3 */; };
+		9B7E61E0282AC19000E45BB2 /* Power.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B7E61DF282AC19000E45BB2 /* Power.mp3 */; };
 		9BF6E3C928257C63004076A0 /* KanyeAllFallsDown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9BF6E3C828257C63004076A0 /* KanyeAllFallsDown.mp3 */; };
 		9BF6E3CB28257C6C004076A0 /* KanyeGoldDiggerCleen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9BF6E3CA28257C6C004076A0 /* KanyeGoldDiggerCleen.mp3 */; };
 		9BF6E3CD28257C72004076A0 /* FlashingLights.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9BF6E3CC28257C72004076A0 /* FlashingLights.mp3 */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		9B7E61DD282ABCC300E45BB2 /* JesusWalks.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = JesusWalks.mp3; sourceTree = "<group>"; };
+		9B7E61DF282AC19000E45BB2 /* Power.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Power.mp3; sourceTree = "<group>"; };
 		9BF6E3C828257C63004076A0 /* KanyeAllFallsDown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = KanyeAllFallsDown.mp3; sourceTree = "<group>"; };
 		9BF6E3CA28257C6C004076A0 /* KanyeGoldDiggerCleen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = KanyeGoldDiggerCleen.mp3; sourceTree = "<group>"; };
 		9BF6E3CC28257C72004076A0 /* FlashingLights.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FlashingLights.mp3; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				9BF6E3CA28257C6C004076A0 /* KanyeGoldDiggerCleen.mp3 */,
 				9BF6E3CC28257C72004076A0 /* FlashingLights.mp3 */,
 				9B7E61DD282ABCC300E45BB2 /* JesusWalks.mp3 */,
+				9B7E61DF282AC19000E45BB2 /* Power.mp3 */,
 				ECEF643528184597007CA37C /* AppDelegate.swift */,
 				ECEF643728184597007CA37C /* SceneDelegate.swift */,
 				ECEF643928184597007CA37C /* ViewController.swift */,
@@ -141,6 +144,7 @@
 				ECEF644228184598007CA37C /* LaunchScreen.storyboard in Resources */,
 				ECEF643F28184598007CA37C /* Assets.xcassets in Resources */,
 				9BF6E3CD28257C72004076A0 /* FlashingLights.mp3 in Resources */,
+				9B7E61E0282AC19000E45BB2 /* Power.mp3 in Resources */,
 				9B7E61DE282ABCC300E45BB2 /* JesusWalks.mp3 in Resources */,
 				9BF6E3C928257C63004076A0 /* KanyeAllFallsDown.mp3 in Resources */,
 				ECEF643D28184597007CA37C /* Main.storyboard in Resources */,
