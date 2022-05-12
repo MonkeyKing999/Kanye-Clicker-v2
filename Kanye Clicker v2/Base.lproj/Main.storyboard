@@ -97,7 +97,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="d8943f" translatesAutoresizingMaskIntoConstraints="NO" id="UsR-Su-wNR">
-                                <rect key="frame" x="129" y="556" width="93" height="47"/>
+                                <rect key="frame" x="133" y="556" width="93" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="d8943f" translatesAutoresizingMaskIntoConstraints="NO" id="0Su-hG-SNQ">
@@ -105,7 +105,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="d8943f" translatesAutoresizingMaskIntoConstraints="NO" id="Xc5-Gw-OD0">
-                                <rect key="frame" x="152" y="556" width="93" height="47"/>
+                                <rect key="frame" x="156" y="556" width="93" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="d8943f" translatesAutoresizingMaskIntoConstraints="NO" id="RBA-fr-FeQ">
@@ -117,7 +117,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="d8943f" translatesAutoresizingMaskIntoConstraints="NO" id="Qhf-EG-UE3">
-                                <rect key="frame" x="152" y="620" width="93" height="47"/>
+                                <rect key="frame" x="159" y="620" width="93" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="d8943f" translatesAutoresizingMaskIntoConstraints="NO" id="KYM-X9-xlC">
@@ -137,7 +137,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="d8943f" translatesAutoresizingMaskIntoConstraints="NO" id="lyc-Bv-7Al">
-                                <rect key="frame" x="126" y="620" width="93" height="47"/>
+                                <rect key="frame" x="133" y="620" width="93" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="d8943f" translatesAutoresizingMaskIntoConstraints="NO" id="ELW-hy-jmB">
@@ -233,7 +233,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgU-A1-d7f">
-                                <rect key="frame" x="20" y="831" width="102" height="31"/>
+                                <rect key="frame" x="26" y="831" width="102" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="RESTART"/>
@@ -268,18 +268,8 @@
                                     <action selector="allfallsdown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eVS-bD-Si2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eM2-fs-wsb">
-                                <rect key="frame" x="142" y="564" width="110" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Gold Digger"/>
-                                <connections>
-                                    <action selector="allfallsdown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kNr-ou-ILu"/>
-                                    <action selector="golddigger:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zUz-vN-AiO"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="022-ti-qgX">
-                                <rect key="frame" x="159" y="628" width="79" height="31"/>
+                                <rect key="frame" x="163" y="628" width="79" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Power"/>
@@ -326,6 +316,16 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
                                     <segue destination="OJV-jD-xm5" kind="show" id="CdW-bB-QtP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eM2-fs-wsb">
+                                <rect key="frame" x="150" y="564" width="110" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Gold Digger"/>
+                                <connections>
+                                    <action selector="allfallsdown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kNr-ou-ILu"/>
+                                    <action selector="golddigger:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zUz-vN-AiO"/>
                                 </connections>
                             </button>
                         </subviews>
