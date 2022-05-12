@@ -305,15 +305,6 @@
                                     <action selector="power:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ClO-qF-euc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tew-nW-4Ez">
-                                <rect key="frame" x="279" y="628" width="107" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Heartless"/>
-                                <connections>
-                                    <action selector="heartless:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jQi-cr-05q"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNn-7i-t1g">
                                 <rect key="frame" x="58" y="683" width="283" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -346,6 +337,17 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Flashing Lights"/>
                                 <connections>
                                     <action selector="flashinglights:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mO2-ZE-Ncd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tew-nW-4Ez">
+                                <rect key="frame" x="274" y="622" width="130" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Homecoming">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Homcoming:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bto-J6-oPw"/>
                                 </connections>
                             </button>
                         </subviews>

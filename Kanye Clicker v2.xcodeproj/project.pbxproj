@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B7C12FA282D60A400DCE739 /* Homecoming.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B7C12F9282D60A300DCE739 /* Homecoming.mp3 */; };
 		9B7E61DE282ABCC300E45BB2 /* JesusWalks.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B7E61DD282ABCC300E45BB2 /* JesusWalks.mp3 */; };
 		9B7E61E0282AC19000E45BB2 /* Power.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B7E61DF282AC19000E45BB2 /* Power.mp3 */; };
 		9BF6E3C928257C63004076A0 /* KanyeAllFallsDown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9BF6E3C828257C63004076A0 /* KanyeAllFallsDown.mp3 */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B7C12F9282D60A300DCE739 /* Homecoming.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Homecoming.mp3; sourceTree = "<group>"; };
 		9B7E61DD282ABCC300E45BB2 /* JesusWalks.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = JesusWalks.mp3; sourceTree = "<group>"; };
 		9B7E61DF282AC19000E45BB2 /* Power.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Power.mp3; sourceTree = "<group>"; };
 		9BF6E3C828257C63004076A0 /* KanyeAllFallsDown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = KanyeAllFallsDown.mp3; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			children = (
 				9BF6E3C828257C63004076A0 /* KanyeAllFallsDown.mp3 */,
 				9BF6E3CA28257C6C004076A0 /* KanyeGoldDiggerCleen.mp3 */,
+				9B7C12F9282D60A300DCE739 /* Homecoming.mp3 */,
 				9BF6E3CC28257C72004076A0 /* FlashingLights.mp3 */,
 				9B7E61DD282ABCC300E45BB2 /* JesusWalks.mp3 */,
 				9B7E61DF282AC19000E45BB2 /* Power.mp3 */,
@@ -147,6 +150,7 @@
 				9B7E61E0282AC19000E45BB2 /* Power.mp3 in Resources */,
 				9B7E61DE282ABCC300E45BB2 /* JesusWalks.mp3 in Resources */,
 				9BF6E3C928257C63004076A0 /* KanyeAllFallsDown.mp3 in Resources */,
+				9B7C12FA282D60A400DCE739 /* Homecoming.mp3 in Resources */,
 				ECEF643D28184597007CA37C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
