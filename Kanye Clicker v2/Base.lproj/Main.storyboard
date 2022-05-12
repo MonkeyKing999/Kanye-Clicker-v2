@@ -294,7 +294,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="god mode (+100k points)"/>
+                                <buttonConfiguration key="configuration" style="plain" title="god mode (+10k points)"/>
                                 <connections>
                                     <action selector="godmode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Brk-Ec-6gn"/>
                                 </connections>
@@ -411,18 +411,27 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Guilt Trip"/>
+                                <connections>
+                                    <action selector="guitTrip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bNq-f6-u4L"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qU2-Z0-5Jh">
                                 <rect key="frame" x="270" y="693" width="130" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Kids See Ghosts"/>
+                                <connections>
+                                    <action selector="kidsSee:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wl1-5g-4B5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9S-Xe-5x9">
                                 <rect key="frame" x="167" y="693" width="70" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Moon"/>
+                                <connections>
+                                    <action selector="moon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e2E-XX-OYk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
