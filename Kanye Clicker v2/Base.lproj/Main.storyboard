@@ -293,15 +293,6 @@
                                 <rect key="frame" x="266" y="620" width="104" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tew-nW-4Ez">
-                                <rect key="frame" x="287" y="628" width="107" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Heartless"/>
-                                <connections>
-                                    <action selector="heartless:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jQi-cr-05q"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNn-7i-t1g">
                                 <rect key="frame" x="58" y="683" width="283" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -326,6 +317,15 @@
                                 <connections>
                                     <action selector="allfallsdown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kNr-ou-ILu"/>
                                     <action selector="golddigger:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zUz-vN-AiO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2YG-NF-xR1">
+                                <rect key="frame" x="291" y="620" width="103" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Heartless"/>
+                                <connections>
+                                    <action selector="heartless:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Z6-ke-tCJ"/>
                                 </connections>
                             </button>
                         </subviews>
