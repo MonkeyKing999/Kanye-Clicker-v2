@@ -264,7 +264,7 @@ class ViewController: UIViewController {
             points = 0
             pointPerClick = 0
             idlePoint = 0
-            secretLabel.text = ("wow, You managed to break 1 million points. thats great that you like the game so much but im afraid im going to stop you from playing, go outside or something.")
+            secretLabel.text = ("wow, You managed to break 1 million points. thats great that you like the game so much but im afraid im going to stop you from playing.")
         }
     }
     
