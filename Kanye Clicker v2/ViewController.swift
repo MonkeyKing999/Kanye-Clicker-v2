@@ -3,7 +3,7 @@
 //  Kanye Clicker v2
 //
 //  Created by Dev Patel on 4/26/22.
-//comment change1
+//comment change1 s 
 import AVFoundation
 import UIKit
 
@@ -214,11 +214,108 @@ class ViewController: UIViewController {
     
     }
     
-    @IBAction func heartless(_ sender: Any) {
-        
+         @IBAction func Homcoming(_ sender: Any) {
+         
+         if let player = player, player.isPlaying {
+            // stop playback
+            
+            player.stop()
+        }
+        else {
+            //set up player, and play
+            let urlString = Bundle.main.path(forResource: "Homecoming", ofType: "mp3")
+            
+            do {
+                try AVAudioSession.sharedInstance().setMode(.default)
+                try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
+                
+                guard let urlString = urlString else {
+                    return
+                }
+
+                player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: urlString))
+                
+                guard let player = player else {
+                    return
+                }
+                
+                player.play()
+            }
+            catch {
+                print("somthing went wrong")
+            }
+        }
+    
     }
     
+    @IBAction func guitTrip(_ sender: Any) {
+        if let player = player, player.isPlaying {
+            // stop playback
+            
+            player.stop()
+        }
+        else {
+            //set up player, and play
+            let urlString = Bundle.main.path(forResource: "GuiltTrip", ofType: "mp3")
+            
+            do {
+                try AVAudioSession.sharedInstance().setMode(.default)
+                try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
+                
+                guard let urlString = urlString else {
+                    return
+                }
+
+                player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: urlString))
+                
+                guard let player = player else {
+                    return
+                }
+                
+                player.play()
+            }
+            catch {
+                print("somthing went wrong")
+            }
+        }
     
+    }
+    
+    @IBAction func moon(_ sender: Any) {
+        if let player = player, player.isPlaying {
+            // stop playback
+            
+            player.stop()
+        }
+        else {
+            //set up player, and play
+            let urlString = Bundle.main.path(forResource: "Moon", ofType: "mp3")
+            
+            do {
+                try AVAudioSession.sharedInstance().setMode(.default)
+                try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
+                
+                guard let urlString = urlString else {
+                    return
+                }
+
+                player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: urlString))
+                
+                guard let player = player else {
+                    return
+                }
+                
+                player.play()
+            }
+            catch {
+                print("somthing went wrong")
+            }
+        }
+    
+    }
+    
+    @IBAction func kidsSee(_ sender: Any) {
+    }
     @IBAction func clickTapGestureImage(_ sender: Any) {
         points += pointPerClick
     }
@@ -238,7 +335,7 @@ class ViewController: UIViewController {
             points = 0
             pointPerClick = 0
             idlePoint = 0
-            secretLabel.text = ("wow, You managed to break 1 million points. thats great that you like the game so much but im afraid you have yet fufil your 'touch grass' quota. im going to stop you  from playing go outside or something.")
+            secretLabel.text = ("wow, You managed to break 1 million points. thats great that you like the game so much but im afraid im going to stop you from playing.")
         }
     }
     
