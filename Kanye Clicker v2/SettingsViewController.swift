@@ -23,3 +23,4 @@ class SettingsViewController: UIViewController {
     }
 @IBAction func stopidle(_ sender: Any) {nvcTimerBool = false}
 }
+//
