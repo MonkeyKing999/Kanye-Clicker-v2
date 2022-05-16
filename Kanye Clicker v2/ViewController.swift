@@ -52,8 +52,10 @@ class ViewController: UIViewController {
         }
         else{idlePoint = 0}
     }
-    
 
+    
+    
+// Music Player by: John Jackowski  START
     @IBAction func allfallsdown(_ sender: Any) {
         if let player = player, player.isPlaying {
             // stop playback
@@ -115,7 +117,6 @@ class ViewController: UIViewController {
                 print("somthing went wrong")
             }
         }
-    
     }
     @IBAction func flashinglights(_ sender: Any) {
         if let player = player, player.isPlaying {
@@ -147,7 +148,6 @@ class ViewController: UIViewController {
                 print("somthing went wrong")
             }
         }
-    
     }
     @IBAction func jesuswalks(_ sender: Any) {
         if let player = player, player.isPlaying {
@@ -179,7 +179,6 @@ class ViewController: UIViewController {
                 print("somthing went wrong")
             }
         }
-    
     }
     @IBAction func power(_ sender: Any) {
         if let player = player, player.isPlaying {
@@ -211,9 +210,7 @@ class ViewController: UIViewController {
                 print("somthing went wrong")
             }
         }
-    
     }
-    
          @IBAction func Homcoming(_ sender: Any) {
          
          if let player = player, player.isPlaying {
@@ -245,9 +242,7 @@ class ViewController: UIViewController {
                 print("somthing went wrong")
             }
         }
-    
     }
-    
     @IBAction func guitTrip(_ sender: Any) {
         if let player = player, player.isPlaying {
             // stop playback
@@ -278,9 +273,7 @@ class ViewController: UIViewController {
                 print("somthing went wrong")
             }
         }
-    
     }
-    
     @IBAction func moon(_ sender: Any) {
         if let player = player, player.isPlaying {
             // stop playback
@@ -311,9 +304,7 @@ class ViewController: UIViewController {
                 print("somthing went wrong")
             }
         }
-    
     }
-    
     @IBAction func kidsSee(_ sender: Any) {
         if let player = player, player.isPlaying {
             // stop playback
@@ -344,9 +335,10 @@ class ViewController: UIViewController {
                 print("somthing went wrong")
             }
         }
-    
-    
     }
+    // Music Player by: John Jackowski END
+    
+    
     @IBAction func clickTapGestureImage(_ sender: Any) {
         points += pointPerClick
     }
