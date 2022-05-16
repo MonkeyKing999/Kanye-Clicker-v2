@@ -10,8 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
-    
     var points = 0
     var pointPerClick = 1
     var idlePoint = 1
@@ -20,13 +18,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var pointDisplay: UILabel!
     @IBOutlet weak var kanyeHead: UIImageView!
     @IBOutlet weak var secretLabel: UILabel!
+    var nvc = SettingsViewController()
     
     var player: AVAudioPlayer?
     
     override func viewDidLoad() {
+        
+        points = nvc.nvcPoints
+        didActivateTimer = nvc.nvcTimerBool
+        
         timed = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(timedAction), userInfo: nil, repeats: true)
         super.viewDidLoad()
-        
+    
         if let pointsBack = UserDefaults.standard.string(forKey: "thePoints") {
             let retrievePoints = Int(pointsBack)
             points = retrievePoints!
@@ -40,12 +43,14 @@ class ViewController: UIViewController {
         let retrieveTimer = UserDefaults.standard.bool(forKey: "activation")
         didActivateTimer = retrieveTimer
         
+        
         if didActivateTimer == true {
-        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) {_ in Timer()
-            self.points += self.idlePoint
+            Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) {_ in Timer()
+                self.idlePoint = 1
+                self.points += self.idlePoint
         }
         }
-        else {print("Timer Was False")}
+        else{idlePoint = 0}
     }
     
 
@@ -281,5 +286,13 @@ class ViewController: UIViewController {
         points += 10000
     }
     
+    func prepare(segue: UIStoryboardSegue,sender: Any?) {
+        if let nvcs = segue.destination as? SettingsViewController {
+            nvc.nvcTimerBool = didActivateTimer
+        }
+        else {
+            print("Segue failed.")
+            return
+        }
+    }
 }
-

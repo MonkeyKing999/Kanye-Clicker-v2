@@ -19,6 +19,7 @@
 		ECEF643D28184597007CA37C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECEF643B28184597007CA37C /* Main.storyboard */; };
 		ECEF643F28184598007CA37C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECEF643E28184598007CA37C /* Assets.xcassets */; };
 		ECEF644228184598007CA37C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECEF644028184598007CA37C /* LaunchScreen.storyboard */; };
+		ED1B6237282D5E5D0018849A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1B6236282D5E5D0018849A /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		ECEF643E28184598007CA37C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECEF644128184598007CA37C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECEF644328184598007CA37C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED1B6236282D5E5D0018849A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				ECEF643728184597007CA37C /* SceneDelegate.swift */,
 				ECEF643928184597007CA37C /* ViewController.swift */,
 				ECEF643B28184597007CA37C /* Main.storyboard */,
+				ED1B6236282D5E5D0018849A /* SettingsViewController.swift */,
 				ECEF643E28184598007CA37C /* Assets.xcassets */,
 				ECEF644028184598007CA37C /* LaunchScreen.storyboard */,
 				ECEF644328184598007CA37C /* Info.plist */,
@@ -165,6 +168,7 @@
 				ECEF643A28184597007CA37C /* ViewController.swift in Sources */,
 				ECEF643628184597007CA37C /* AppDelegate.swift in Sources */,
 				ECEF643828184597007CA37C /* SceneDelegate.swift in Sources */,
+				ED1B6237282D5E5D0018849A /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
