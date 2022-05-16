@@ -57,6 +57,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9BE2B4B62832B03000B85DB7 /* Music Mp3's */ = {
+			isa = PBXGroup;
+			children = (
+				9B7E61DF282AC19000E45BB2 /* Power.mp3 */,
+				9B7E61DD282ABCC300E45BB2 /* JesusWalks.mp3 */,
+				9BF6E3CC28257C72004076A0 /* FlashingLights.mp3 */,
+				9B7C12F9282D60A300DCE739 /* Homecoming.mp3 */,
+				9BE2B4B42832ACD400B85DB7 /* KidsSeeGhostsKanye.mp3 */,
+				9BF6E3CA28257C6C004076A0 /* KanyeGoldDiggerCleen.mp3 */,
+				9BF6E3C828257C63004076A0 /* KanyeAllFallsDown.mp3 */,
+				EC050601282D679B00DBC7A9 /* Moon.mp3 */,
+				EC0505FF282D679500DBC7A9 /* GuiltTrip.mp3 */,
+			);
+			path = "Music Mp3's";
+			sourceTree = "<group>";
+		};
 		ECEF642928184596007CA37C = {
 			isa = PBXGroup;
 			children = (
@@ -76,15 +92,7 @@
 		ECEF643428184597007CA37C /* Kanye Clicker v2 */ = {
 			isa = PBXGroup;
 			children = (
-				9BF6E3C828257C63004076A0 /* KanyeAllFallsDown.mp3 */,
-				EC0505FF282D679500DBC7A9 /* GuiltTrip.mp3 */,
-				EC050601282D679B00DBC7A9 /* Moon.mp3 */,
-				9BF6E3CA28257C6C004076A0 /* KanyeGoldDiggerCleen.mp3 */,
-				9BE2B4B42832ACD400B85DB7 /* KidsSeeGhostsKanye.mp3 */,
-				9B7C12F9282D60A300DCE739 /* Homecoming.mp3 */,
-				9BF6E3CC28257C72004076A0 /* FlashingLights.mp3 */,
-				9B7E61DD282ABCC300E45BB2 /* JesusWalks.mp3 */,
-				9B7E61DF282AC19000E45BB2 /* Power.mp3 */,
+				9BE2B4B62832B03000B85DB7 /* Music Mp3's */,
 				ECEF643528184597007CA37C /* AppDelegate.swift */,
 				ECEF643728184597007CA37C /* SceneDelegate.swift */,
 				ECEF643928184597007CA37C /* ViewController.swift */,
