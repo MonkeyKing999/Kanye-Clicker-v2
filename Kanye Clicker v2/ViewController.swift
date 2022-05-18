@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     var points = 0
     var pointPerClick = 1
-    var idlePoint = 1
+    var idlePoint = 0
     var didActivateTimer = false
     var timed = Timer()
     @IBOutlet weak var pointDisplay: UILabel!
@@ -341,7 +341,7 @@ class ViewController: UIViewController {
     @IBAction func restart(_ sender: Any) {
         points = 0
         pointPerClick = 1
-        idlePoint = 1
+        idlePoint = 0
         secretLabel.text = ("")
     }
     
@@ -388,6 +388,7 @@ class ViewController: UIViewController {
         
         if points >= 2500 {
         points -= 2500
+            idlePoint += 1
             }
         else {return}
         
