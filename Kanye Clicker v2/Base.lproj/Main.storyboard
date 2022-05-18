@@ -321,7 +321,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Homecoming"/>
                                 <connections>
                                     <action selector="Homcoming:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eb9-oF-TG7"/>
-                                    <action selector="heartless:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jQi-cr-05q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eM2-fs-wsb">
