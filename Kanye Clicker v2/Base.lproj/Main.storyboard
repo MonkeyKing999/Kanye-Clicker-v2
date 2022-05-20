@@ -158,16 +158,6 @@
                                     <action selector="flashinglights:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mO2-ZE-Ncd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZk-ix-gst">
-                                <rect key="frame" x="278" y="677" width="114" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.84624660019999998" green="0.58078390359999998" blue="0.2446637452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Kids See Ghosts"/>
-                                <connections>
-                                    <action selector="kidsSee:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lpw-Wz-4up"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvC-Bl-7xn">
                                 <rect key="frame" x="13" y="620" width="114" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -204,6 +194,28 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Restart"/>
                                 <connections>
                                     <action selector="restart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yt2-po-5PS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zqg-fy-nOd">
+                                <rect key="frame" x="157" y="815" width="93" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8461292386" green="0.5807701945" blue="0.24663150310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="History">
+                                    <color key="baseForegroundColor" name="AccentColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="kanyehistory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YA4-As-Mcb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZk-ix-gst">
+                                <rect key="frame" x="278" y="677" width="114" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.84624660019999998" green="0.58078390359999998" blue="0.2446637452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kids See Ghosts"/>
+                                <connections>
+                                    <action selector="kidsSee:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lpw-Wz-4up"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -303,6 +315,9 @@
     <resources>
         <image name="d8943f" width="150" height="200"/>
         <image name="kanyeHead" width="840" height="859"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

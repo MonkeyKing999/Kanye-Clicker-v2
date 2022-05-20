@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var secretLabel: UILabel!
     
     var player: AVAudioPlayer?
-    
+    let url = URL(string: "https://en.wikipedia.org/wiki/Kanye_West")
     override func viewDidLoad() {
 
         timed = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(timedAction), userInfo: nil, repeats: true)
@@ -393,6 +393,10 @@ class ViewController: UIViewController {
     
     @IBAction func godmode(_ sender: Any) {
         points += 10000
+    }
+ 
+    @IBAction func kanyehistory(_ sender: UIButton){
+        UIApplication.shared.open(url!, options: [:], completionHandler: nil)
     }
     
 }
