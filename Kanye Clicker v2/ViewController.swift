@@ -386,7 +386,7 @@ class ViewController: UIViewController {
     @IBAction func idleIncreaase(_ sender: Any) {
         if points >= 2500 {
         points -= 2500
-            idlePoint += 1
+            idlePoint += 10
             }
         else {return}
     }
