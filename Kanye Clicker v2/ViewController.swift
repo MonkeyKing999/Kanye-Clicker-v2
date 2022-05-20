@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         
         if didActivateTimer == true {
             Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) {_ in Timer()
-                self.idlePoint = 1
+
                 self.points += self.idlePoint
         }
         }
@@ -384,19 +384,11 @@ class ViewController: UIViewController {
 
 
     @IBAction func idleIncreaase(_ sender: Any) {
-        if didActivateTimer == true {return}
-        
         if points >= 2500 {
         points -= 2500
             idlePoint += 1
             }
         else {return}
-        
-        didActivateTimer = true
-        
-        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) {_ in Timer()
-            self.points += self.idlePoint
-        }
     }
     
     @IBAction func godmode(_ sender: Any) {
