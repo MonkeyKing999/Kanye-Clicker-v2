@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var pointDisplay: UILabel!
     @IBOutlet weak var kanyeHead: UIImageView!
     @IBOutlet weak var secretLabel: UILabel!
+    var string = ""
     
     var player: AVAudioPlayer?
     let url = URL(string: "https://en.wikipedia.org/wiki/Kanye_West")
@@ -42,8 +43,26 @@ class ViewController: UIViewController {
         
         if didActivateTimer == true {
             Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) {_ in Timer()
-
-                self.points += self.idlePoint
+self.points += self.idlePoint
+                let string = self.pointDisplay.text
+                switch string?.count {
+                case 1:
+                    self.pointDisplay.frame.size.width = 50.0
+                case 2:
+                    self.pointDisplay.frame.size.width = 70.0
+                case 3:
+                    self.pointDisplay.frame.size.width = 90.0
+                case 4:
+                    self.pointDisplay.frame.size.width = 110.0
+                case 5:
+                    self.pointDisplay.frame.size.width = 130.0
+                case 6:
+                    self.pointDisplay.frame.size.width = 150.0
+                    print("Resetting?")
+                default:
+                    print("There is an unexpected character count.")
+                }
+            
         }
         }
         else{idlePoint = 0}
@@ -355,6 +374,11 @@ class ViewController: UIViewController {
             pointPerClick = 0
             idlePoint = 0
             secretLabel.text = ("WOW, You managed to break 1 million points. Thats great that you like the game so much but im afraid im going to stop you from playing.")
+        }
+    let data = String(points)
+        string = data
+        if string.count >= 3 {
+            pointDisplay.frame.size.width = 48.0
         }
     }
     
