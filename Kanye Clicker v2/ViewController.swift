@@ -40,7 +40,6 @@ class ViewController: UIViewController {
         let retrieveTimer = UserDefaults.standard.bool(forKey: "activation")
         didActivateTimer = retrieveTimer
         
-        
         if didActivateTimer == true {
             Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) {_ in Timer()
 self.points += self.idlePoint
@@ -62,14 +61,10 @@ self.points += self.idlePoint
                 default:
                     print("There is an unexpected character count.")
                 }
-            
         }
         }
         else{idlePoint = 0}
     }
-
-    
-    
 // Music Player by: John Jackowski  START
     @IBAction func allfallsdown(_ sender: Any) {
         if let player = player, player.isPlaying {
@@ -218,7 +213,6 @@ self.points += self.idlePoint
                 guard let player = player else {
                     return
                 }
-                
                 player.play()
             }
             catch {
@@ -230,7 +224,6 @@ self.points += self.idlePoint
          
          if let player = player, player.isPlaying {
             // stop playback
-            
             player.stop()
         }
         else {
@@ -351,8 +344,8 @@ self.points += self.idlePoint
             }
         }
     }
-    // Music Player by: John Jackowski END
     
+    // Music Player by: John Jackowski END
     
     @IBAction func clickTapGestureImage(_ sender: Any) {
         points += pointPerClick
@@ -375,7 +368,8 @@ self.points += self.idlePoint
             idlePoint = 0
             secretLabel.text = ("WOW, You managed to break 1 million points. Thats great that you like the game so much but im afraid im going to stop you from playing.")
         }
-    let data = String(points)
+    
+        let data = String(points)
         string = data
         if string.count >= 3 {
             pointDisplay.frame.size.width = 48.0
@@ -394,9 +388,6 @@ self.points += self.idlePoint
     
     }
     
-
-    
-    
     @IBAction func doublePointClick(_ sender: Any) {
         if points >= 10000 {
         pointPerClick += pointPerClick
@@ -405,7 +396,6 @@ self.points += self.idlePoint
             return
         }
     }
-
 
     @IBAction func idleIncreaase(_ sender: Any) {
         if points >= 2500 {
@@ -422,5 +412,4 @@ self.points += self.idlePoint
     @IBAction func kanyehistory(_ sender: UIButton){
         UIApplication.shared.open(url!, options: [:], completionHandler: nil)
     }
-    
 }
