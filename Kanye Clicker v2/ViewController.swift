@@ -412,4 +412,12 @@ self.points += self.idlePoint
     @IBAction func kanyehistory(_ sender: UIButton){
         UIApplication.shared.open(url!, options: [:], completionHandler: nil)
     }
+
+    @IBAction func light(_ sender: Any) {
+        view.backgroundColor = .systemPink
+    }
+
+    @IBAction func dark(_ sender: Any) {
+        view.backgroundColor = .black
+}
 }
