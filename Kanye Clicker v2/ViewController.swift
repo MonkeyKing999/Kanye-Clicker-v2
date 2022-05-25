@@ -372,7 +372,7 @@ self.points += self.idlePoint
         let data = String(points)
         string = data
         if string.count >= 3 {
-            pointDisplay.frame.size.width = 48.0
+           // pointDisplay.frame.size.width = 48.0
         }
     }
     
